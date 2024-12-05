@@ -1,7 +1,7 @@
 <!Doctype html>
-<html>
-
+<html lang="en">
 	<head>
+		<meta charset="UTF-8">
 
 			<style>
 
@@ -37,6 +37,11 @@
 
 
 			</style>
+			
+			
+
+
+					
 	</head>
 
 	<body>
@@ -51,25 +56,49 @@
 					<a href="hotels.html">Hotels</a></a>
 					<a href="Contactus.html">Contact us</a>
 					</nav>
-				
+
 			</header>
-			
+
 			<fieldset>
 
-			<h1 class="rrr"> About Us </h1>
+			<h1 class="rrr"> <script>
+					       var f = location.search;
+								document.write(f);
+								document.write(f.length);
+								document.write( f.substring(0,1)  );
+								document.write(f.substring(f.length-1));
+								
+						 const p = new URLSearchParams(location.search);
+							   document.write("<br>Name " + p.get("Name"));
+							   document.write("<br>Email " + p.get("Email"));
+							   document.write("<br>Phone " + p.get("Phone"));
+							   document.write("<br>Event date-start " + p.get("dd1"));
+							   document.write("<br>Event date-end " + p.get("dd2"));
+			</script> </h1>
+
+
+
+			<h2 class="rrr"> </h2>
+
+
+
+
 			
+			<a href="Thank you.html">
 			
+			<input type="button" value="done">
 			
-			<h2 class="rrr">We are two student working on Project Class 112 to show the best hotels.</h2>
-			
-			
-			
-			
-			
-			
+			</a>		
+
+		
+			</form>
+			</select>
+
+
+
 			<footer>
-			
-			
+
+
 					<br>
 						<a href="Feedback.html">Feedback</a>
 
